@@ -1,11 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh '''dnf install ruby ruby-devel g++
-gem install jekyll bundler
-gem install github-pages'''
+        sh 'apt update -y'
       }
     }
 
